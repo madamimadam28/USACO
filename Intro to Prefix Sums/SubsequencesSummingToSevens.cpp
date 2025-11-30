@@ -6,8 +6,8 @@ Link for problem: https://usaco.org/index.php?page=viewproblem2&cpid=595
 using namespace std;
 
 int main() {
-    freopen("div7.in", "r", stdin);
-    freopen("div7.out", "w", stdout);
+    // freopen("div7.in", "r", stdin);
+    // freopen("div7.out", "w", stdout);
 
     int N;
     cin >> N;
