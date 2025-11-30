@@ -1,0 +1,30 @@
+# Ignore compiled binary/executable files
+# Windows executables
+*.exe
+
+# Unix/Mac compiled outputs
+*.out
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+*.class
+
+# Build directories
+/bin/
+/build/
+/obj/
+
+# Ignore Visual Studio/IDE config (optional)
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Optional: Visual Studio files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
