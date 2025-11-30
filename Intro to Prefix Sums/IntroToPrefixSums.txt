@@ -1,0 +1,19 @@
+Lets say we have a one-indexed integer array arr of size N and we want to compute the value of
+arr[a] + arr[a + 1] + ... + arr[b]
+for Q different pairs (a, b) satisfying 1 <= a <= b <= N.
+
+Naively, for every query, we can iterate through all entries from index a to index b to add them up.
+Since we have Q different queries and each query requires a max of O(N) operations, our total time is O(NQ), which is too slow.
+
+Instead, we can use prefix sums to process array sum queries. We designate a prefix sum prefix.
+First, we set prefix[0] = 0, and then for indices k such that 1 <= k <= N, define the prefix sum array as follows:
+prefix[k] = sum of element from arr[1] to arr[k]
+
+Basically, what this means is that the element at index k of the prefix sum array stores the sum of all the elements in the original array from index 1 up to k.
+This can be calculated easily in O(N) by using the following formula:
+prefix[k] = prefix[k - 1] + arr[k]
+
+Now, when we want to query for the sum of the elements of the array arr from indices a to b inclusive, we can use the following formula:
+The sum of the elements from arr[L] to arr[R] = prefix[R] - prefix[L - 1]
+
+These are also known as partial sums.
