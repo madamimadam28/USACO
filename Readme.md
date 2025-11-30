@@ -25,3 +25,14 @@ git commit -m "Add workspace settings: explorer.sortOrder=modified, .gitignore u
 git push origin main
 ```
 
+### Toggle Explorer sort direction (Oldest -> Newest)
+
+If files are still sorted newest-first after setting `explorer.sortOrder`, use the GUI toggle or the installed extension to switch Explorer order.
+
+GUI:
+- Explorer -> Click the three-dot menu (...) -> Sort by -> Modified -> Sort order -> Ascending
+
+With the recommended extension:
+- Open the Command Palette (Ctrl+Shift+P) and run `Explorer Sort: Toggle sort order` or `Explorer Sort: Sort by Modified Ascending` (the exact command name is in the extension's README).
+
+
