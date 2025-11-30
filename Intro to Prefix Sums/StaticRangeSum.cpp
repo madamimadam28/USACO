@@ -2,8 +2,7 @@
 Link for problem: https://judge.yosupo.jp/problem/static_range_sum
 */
 
-#include <iostream>
-#include <vector>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
